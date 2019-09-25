@@ -31,12 +31,14 @@
 		"types"
 	],
 	"dependencies": {
-		"@types/chroma-js": "^1.4.1",
+		"@types/chroma-js": "^1.4.2",
 		"chroma-js": "^2.0.3"
 	},
 	"devDependencies": {
 		"@ky-is/eslint-config": "^1.7.0",
 		"@types/jest": "^24.0.13",
+		"@typescript-eslint/eslint-plugin": "^2.3.1",
+		"@typescript-eslint/parser": "^2.3.1",
 		"eslint": "^5.16.0",
 		"eslint-plugin-typescript": "^0.14.0",
 		"jest": "^24.8.0",
