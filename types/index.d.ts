@@ -1,3 +1,5 @@
+import {InterpolationMode} from 'chroma-js';
+
 export interface ColorPalette {
   [key: string]: any
 }
@@ -10,6 +12,7 @@ export interface PaletteOptions {
 	grayscaleMix?: number
 	palette?: ColorPalette
   colorscale?: Array<string|number>
+  scalemode?: InterpolationMode
 }
 
 export interface ColorRange {
