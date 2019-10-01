@@ -1,51 +1,59 @@
 {
-	"name": "@ky-is/tailwind-color-palette",
-	"version": "1.0.0",
-	"description": "Personalized color palettes for Tailwindcss.",
-	"author": "Kyle Coburn",
-	"license": "ISC",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "rimraf dist && tsc",
-		"prepare": "rimraf dist && tsc && sed -i '' -e $'s/    /\t/g' $(find dist -type f) && jest",
-		"test": "jest"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ky-is/tailwind-color-palette.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ky-is/tailwind-color-palette/issues"
-	},
-	"homepage": "https://github.com/ky-is/tailwind-color-palette#readme",
-	"eslintConfig": {
-		"extends": "@ky-is/eslint-config/typescript"
-	},
-	"eslintIgnore": [
-		"dist",
-		"node_modules*"
-	],
-	"files": [
-		"dist",
-		"types"
-	],
-	"dependencies": {
-		"@types/chroma-js": "^1.4.2",
-		"chroma-js": "^2.0.3"
-	},
-	"devDependencies": {
-		"@ky-is/eslint-config": "^1.7.0",
-		"@types/jest": "^24.0.13",
-		"@typescript-eslint/eslint-plugin": "^2.3.1",
-		"@typescript-eslint/parser": "^2.3.1",
-		"eslint": "^5.16.0",
-		"eslint-plugin-typescript": "^0.14.0",
-		"jest": "^24.8.0",
-		"rimraf": "^2.6.3",
-		"ts-jest": "^24.0.2",
-		"tslint": "^5.16.0",
-		"typescript": "^3.4.5",
-		"typescript-eslint-parser": "^22.0.0"
-	}
+  "name": "@dkuku/tailwind-color-palette",
+  "version": "1.0.1",
+  "description": "Personalized color palettes for Tailwindcss.",
+  "author": "Kyle Coburn",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "rimraf dist && tsc && jest",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ky-is/tailwind-color-palette.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ky-is/tailwind-color-palette/issues"
+  },
+  "homepage": "https://github.com/ky-is/tailwind-color-palette#readme",
+  "eslintConfig": {
+    "extends": "@ky-is/eslint-config/typescript"
+  },
+  "eslintIgnore": [
+    "dist",
+    "node_modules*"
+  ],
+  "files": [
+    "dist",
+    "types"
+  ],
+  "dependencies": {
+    "@types/chroma-js": "^1.4.3",
+    "chroma-js": "^2.0.3"
+  },
+  "devDependencies": {
+    "@ky-is/eslint-config": "^1.7.0",
+    "@types/jest": "^24.0.13",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "keywords": [
+    "tailwind",
+    "chroma"
+  ]
 }
